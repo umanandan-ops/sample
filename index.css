@@ -75,11 +75,15 @@ body{
 .login .password:focus{
 background-color: rgb(213, 220, 220);
 }
-.login .username:focus ~ .user{
+
+
+.login .username:focus ~ .user,
+.login .username:valid ~ .user {
     transform: translateY(-30px);
 }
 
-.login .password:focus ~ .pass{
+.login .password:focus ~ .pass,
+.login .password:valid ~ .pass {
     transform: translateY(-30px);
 }
 
